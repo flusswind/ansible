@@ -1,0 +1,10 @@
+- hosts: localhost
+  become: true
+  tasks:
+
+  - name: Install Plasma
+    community.general.pacman:
+      name: plasma
+      state: present
+
+  

@@ -1,0 +1,8 @@
+- hosts: localhost
+  become: true
+  tasks:
+
+  - name: Update System
+    ansible.builtin.command: garuda-update
+
+  

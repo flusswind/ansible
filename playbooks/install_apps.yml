@@ -1,0 +1,20 @@
+- hosts: localhost
+  become: true
+  tasks:
+
+  - name: Install Nano
+    community.general.pacman:
+      name: nano
+      state: present
+  
+  - name: Install btop
+    community.general.pacman:
+      name: nano
+      state: present
+
+  - name: Install allacrity
+    community.general.pacman:
+      name: nano
+      state: present
+
+  

@@ -1,0 +1,19 @@
+- hosts: localhost
+  become: true
+  tasks:
+
+  - name: Install Chrome
+    community.general.pacman:
+      name: chrome
+      state: present
+  
+  - name: Install Firefox
+    community.general.pacman:
+      name: firefox
+      state: present
+  
+  - name: Install Firedragon
+    community.general.pacman:
+      name: firedragon
+      state: present
+  
